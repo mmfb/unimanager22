@@ -20,6 +20,13 @@ public class StudentRepository {
     public static ArrayList<Student> getStudents() {
         return students;
     }
+
+    public static boolean deleteStudent(int number) {
+        
+        return students.removeIf((s)->s.getNumber()==number);
+    }
+
+    
 }
 
 
